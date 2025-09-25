@@ -1,4 +1,6 @@
+//package be.ecam.basics.exercises;
 package be.ecam.basics.exercises;
+
 
 import org.junit.jupiter.api.Test;
 

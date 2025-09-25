@@ -11,7 +11,10 @@ public class Inventory {
 
     public static boolean hasSku(List<Item> items, String sku) {
         for (Item i : items) {
-            if (i.getSku() == sku) {
+
+            // Les comparaisons en java se font de préférence avec equals pour éviter les erreurs
+            //if (i.getSku() == sku) {
+            if (i.getSku().equals(sku)) {
                 return true;
             }
         }

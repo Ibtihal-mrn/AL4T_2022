@@ -1,5 +1,6 @@
 package be.ecam.basics.exercises;
 
+import java.util.Collections;
 import java.util.List;
 
 public class Catalog {
@@ -9,7 +10,9 @@ public class Catalog {
 
         public Product(String name, List<String> tags) {
             this.name = name;
-            this.tags = tags;
+            //this.tags = tags;
+            // Si tags est null, on met une liste vide immuable
+            this.tags = (tags == null) ? Collections.emptyList() : tags;
         }
 
         public String getName() { return name; }
